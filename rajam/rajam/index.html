@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Tag for SEO -->
+    <title>Rajam Tiles & Home Materials Showroom</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Premium tiles, sanitary wares, bath fittings, and electrical materials for your home and office. Visit our showroom today.">
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">Rajam <span>Showroom</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- INSTRUCTION: To change the background image, go to style.css and find the .hero class. Replace the background-image URL there. Recommended resolution: 1920x1080 to ensure crisp display on large screens. -->
+    <header id="home" class="hero">
+        <!-- INSTRUCTION: The dark overlay is also controlled in style.css inside the .hero background property using a linear-gradient. You can change rgba(0,0,0,0.6) to adjust darkness or color. -->
+        <div class="hero-content">
+            <h2>Transform Your Space with Elegance</h2>
+            <p>Premium tiles, bath fittings, and home materials.</p>
+            <a href="#categories" class="btn btn-primary">Explore Products</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container pt-4">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Welcome to our modern showroom, your ultimate destination for high-quality home materials.</p>
+            </div>
+            <div class="about-content">
+                <p>We pride ourselves on offering an extensive and curated selection of premium tiles, state-of-the-art sanitary wares, luxurious bath fittings, and reliable electrical components. Whether you are building your dream home from scratch or renovating your space, we provide materials that perfectly blend functionality with modern aesthetics. Step into our showroom to experience unmatched quality, design inspiration, and expert guidance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Collections</h2>
+                <p>Browse through our wide range of premium product categories.</p>
+            </div>
+            
+            <!-- Category Navigation / Filters -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tiles">Tiles</button>
+                <button class="filter-btn" data-filter="sanitary">Sanitary Wares</button>
+                <button class="filter-btn" data-filter="bath">Bath Fittings</button>
+                <button class="filter-btn" data-filter="electricals">Electricals</button>
+            </div>
+
+            <!-- Category Grid -->
+            <!-- INSTRUCTION: To add a NEW CATEGORY:
+                 1. Add a new button above with a unique data-filter attribute (e.g. data-filter="new-category")
+                 2. Add a new item block below, using 'category-item' and your new class 'new-category'.
+            -->
+            <div class="grid gallery-grid" id="productGrid">
+                
+                <!-- TILES SUBCATEGORIES -->
+                <!-- INSTRUCTION: To add a NEW SUBCATEGORY under Tiles:
+                     Copy the entire <div class="category-item tiles">...</div> block and paste it inside the grid.
+                     Then change the image src, title (<h3>), and description (<p>). 
+                -->
+                <!-- Subcategory 1 -->
+                <div class="category-item tiles">
+                    <a href="kitchen-tiles.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <!-- INSTRUCTION: Replace src="" with your real product image path (e.g. "images/kitchen-tiles.jpg"). Recommended size: 800x600 -->
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Kitchen+Tiles" alt="Kitchen Tiles" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Kitchen Tiles</h3>
+                                <p>Stain-resistant, easy-to-clean elegant tiles for modern kitchens.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Subcategory 2 -->
+                <div class="category-item tiles">
+                    <a href="bathroom-tiles.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Bathroom+Floor+Tiles" alt="Bathroom Floor Tiles" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Bathroom Floor Tiles</h3>
+                                <p>Anti-slip, water-resistant floor tiles with textured finishes.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Subcategory 3 -->
+                <div class="category-item tiles">
+                    <a href="hall-tiles.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Hall+Floor+Tiles" alt="Hall Floor Tiles" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Hall Floor Tiles</h3>
+                                <p>Luxurious large-format vitrified tiles for spacious living rooms.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Subcategory 4 -->
+                <div class="category-item tiles">
+                    <a href="wall-tiles.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Wall+Tiles" alt="Wall Tiles" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Wall Tiles</h3>
+                                <p>Decorative elevation and wall covering designs for indoor & outdoor.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- SANITARY WARES SUBCATEGORIES -->
+                <div class="category-item sanitary">
+                    <a href="water-closets.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Water+Closets" alt="Water Closets" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Water Closets</h3>
+                                <p>Sleek, eco-friendly commodes and wall-hung systems.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="category-item sanitary">
+                    <a href="wash-basins.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Wash+Basins" alt="Wash Basins" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Wash Basins</h3>
+                                <p>Countertop and wall-mounted elegant wash basins.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- BATH FITTINGS SUBCATEGORIES -->
+                <div class="category-item bath">
+                    <a href="faucets-mixers.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Faucets+%26+Mixers" alt="Faucets & Mixers" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Faucets & Mixers</h3>
+                                <p>Premium chrome & matte black taps for sinks and showers.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="category-item bath">
+                    <a href="showers.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Showers" alt="Showers" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Showers</h3>
+                                <p>Rain showers and hand showers for a rejuvenating experience.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ELECTRICALS SUBCATEGORIES -->
+                <div class="category-item electricals">
+                    <a href="switches-sockets.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Switches+%26+Sockets" alt="Switches & Sockets" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Switches & Sockets</h3>
+                                <p>Modern modular electrical switches and smart home automation.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="category-item electricals">
+                    <a href="lighting-solutions.html" class="card-link">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="https://placehold.co/800x600/e0e0e0/666666?text=Lighting" alt="Lighting" class="card-img">
+                            </div>
+                            <div class="card-body">
+                                <h3>Lighting Solutions</h3>
+                                <p>Elegant LED panels, strip lights, and decorative fixtures.</p>
+                                <span class="view-more">View Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visit Our Showroom</h2>
+                <p>We'd love to help you find exactly what you need.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Premium Materials Blvd,<br>Design District, City 45678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon">🕒</div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Box -->
+                <div class="map-container">
+                    <!-- INSTRUCTION: Replace this iframe src with your actual Google Maps embed link from Google Maps -> Share -> Embed a map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115681.29592731265!2d-77.4771327!3d25.0326996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c99b981dbc9%3A0x2aef01d3485e50d2!2sNassau%2C%20The%20Bahamas!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rajam Tiles & Home Materials Showroom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
